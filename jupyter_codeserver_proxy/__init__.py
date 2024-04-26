@@ -20,6 +20,7 @@ def setup_codeserver():
         return [full_path, f'--port={port}', "--auth", "none", working_dir ]
 
     return {
+        'port': 54321,
         'timeout': 20,
         'launcher_entry': {
             'title': 'VS Code IDE',
